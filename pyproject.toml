@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "titan-image-inpaint"
+version = "0.1.0"
+description = ""
+authors = ["kobayasd <d.kobayashi0527@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+opencv-python = "^4.9.0.80"
+rembg = "^2.0.53"
+boto3 = "^1.34.29"
+matplotlib = "^3.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
