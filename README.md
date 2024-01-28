@@ -24,9 +24,16 @@ poetry で環境構築が可能です。
 poetry install
 ```
 
+`.env.sample` ファイルを `.env` にリネームし、AWS の認証情報を設定します。
+
+```
+cp .env.example .env
+```
+
 ## Usage
 
 環境構築後、以下のコマンドで実行できます
+
 ```
 poetry run python main.py 
 ```

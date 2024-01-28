@@ -8,18 +8,21 @@ import os
 from PIL import Image
 import logging
 from rembg import remove
+from dotenv import load_dotenv
+
+# envファイルから環境変数を読み込む
+load_dotenv()
 
 # ログの設定
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class ImageProcessor:
-    # マジックナンバーをクラス変数として定義
-    THRESHOLD = 128
-    GAUSSIAN_BLUR_SIZE = (1, 1)
+
 
     @staticmethod
     def create_binary_mask(masked_image):
         """マスク画像を2値化する"""
+        THRESHOLD = 128 # 2 値化の閾値
         mask = masked_image.point(lambda x: 0 if x < ImageProcessor.THRESHOLD else 255)
         return mask
     
