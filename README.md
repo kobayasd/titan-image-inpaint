@@ -1,4 +1,5 @@
-# Image Background Removal and Editing with Amazon Bedrock
+# Inpainting with Amazon Bedrock (Titan Image Generator)
+
 This project leverages Amazon Bedrock's Titan Image Generator to enable background-only image generation for an original image. It automatically generates a mask to ensure that the subject of the original image remains unaffected by the prompt. Using the Inpainting feature of the Titan Image Generator, it generates the parts of the image outside the mask.
 
 Amazon Bedrock の Titan Image Generator を利用して、元画像の背景のみ画像生成を行うことを可能にします。元画像の被写体にはプロンプトの影響が及ばないように、自動的にマスク生成を行っており、Titan Image Generator の Inpaint 機能で、マスク部分以外の生成を行っています。
